@@ -1,0 +1,438 @@
+/* ============================================== NAVBAR ======================================================= */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+html{
+    height: 100%;
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+	font-family: sans-serif;
+}
+
+body{
+	background-color:  #FEFBEA;
+	font-family: monserrat,sans-serif;
+	position: relative;
+	min-height: 100%;
+}
+
+header{
+    width: 100%;
+    background: linear-gradient(90deg, rgba(247,211,175,1) 32%, rgba(255,253,250,0.8550770650056898) 93%);
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.nav-bar{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav-bar img{
+	padding: 10px;
+	width: 10%;
+	border-radius: 100%;
+	margin-left: -10%;
+}
+
+.nav-bar .logo1 a{
+	width: 0%;
+}
+
+.nav-bar .list ul{
+    padding: 20px;
+    display:flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.nav-bar .list ul li{
+    padding: 0px 30px;
+    text-decoration: none;
+}
+
+.nav-bar .list ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.nav-bar .list a:hover{
+    background-color:saddlebrown;
+    color: white;
+}
+
+.dropdown:hover > .drop_content{
+	display: block;
+	z-index: 10;
+}
+
+
+.dropdown{
+	position: relative;
+	display: inline-block;
+}
+
+.drop_content{
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.drop_content a{
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+/* ================================================Body===================================================== */
+.box{
+	width: 100%;
+    height: 700px;
+}
+  
+.box1{
+	position: relative;
+}
+
+.box2{
+	position: relative;   
+}
+
+.image{
+	position: relative;
+	width: 100%;
+	height: 700px;
+	background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(images/1312802.webp);
+}
+
+.imgtxt{
+	position: absolute;
+	bottom: 300px;
+	left: 60px;
+	color: red;
+	font-size: 50px;
+	font-family: fantasy;
+}
+
+.btn{
+	position: absolute;
+	bottom: 150px;
+	left: 100px;
+	background-color:#D2B48C ;
+	border-radius: 100px;
+	height: 75px;
+	width: 200px;
+	font-size: 25px;
+	transition-duration: 0.3s;
+}
+
+.btn:hover, .btn:active{
+	background-color: #F5F5DC;
+	cursor: pointer;
+	color: green;
+	box-shadow: 0 12px 16px 0 rgba(136, 133, 133, 0.19),0 17px 50px 0 rgba(136, 133, 133, 0.19);
+}
+
+
+/* ================================================Menu======================================================== */
+.title h1{
+	border-bottom: 1px solid black;
+	text-align: center;
+	margin: 1% 40% 1% 40%;
+}
+
+.title p{
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.rate{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+	}
+
+button{
+    width: 75px;
+    border: 0px;
+    background-color:whitesmoke;
+    color: blue;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+button:hover{
+    color:brown;
+    background-color:skyblue;
+}
+
+.images img{
+	margin-top: 50px;
+    width: 350px;
+    height: 200px
+}
+
+.wrap h1{
+    margin-top: 30px;
+    margin-bottom: 10px;
+	width: 100%;
+}
+
+.card{
+    display: flex;
+	width: 100%;
+	justify-content: center;
+}
+
+.card .text{
+	margin-top: 40px;
+	margin-left: 60px;
+}
+
+.card img{
+	margin-left: -100px;
+}
+
+.text h4{
+	color: red;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#Beverage{
+   display: none;
+} 
+
+/* ================================================Footer===================================================== */
+
+footer{
+    position: relative;
+	display: flex;
+	flex-direction: row;
+    width: 100%;
+    bottom: 0;
+	margin-top: 20px;
+    background: linear-gradient(90deg, rgba(247,211,175,1) 32%, rgba(255,253,250,0.8550770650056898) 93%);
+	justify-content: space-evenly;
+}
+
+footer img{
+	padding: 20px;
+	width: 100px;
+	height: 80px;
+}
+
+footer .logo img{
+	border-radius: 100%;
+	margin-top: 20px;
+	width: 50%;
+	height: 80%;
+}
+
+
+footer .divide{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: 0.1px solid black;
+	margin-left: -230px;
+}
+
+footer .menu{
+	margin-top: 25px;
+	padding: 20px
+}
+
+footer .menu a{
+	display: flex;
+	flex-direction: column;
+	text-decoration: none;
+	color: black;
+	margin-top: 10px;
+}
+
+footer .menu a:hover{
+	color: blue;
+}
+
+footer .sosmed{
+	margin-top: 20px;
+	padding: 20px
+}
+
+footer .sosmed img{
+	display: inline;
+	border-radius: 100%;
+	margin-left: 20px;
+	margin-top: -8px;
+}
+
+footer .sosmed h3{
+	text-align: center;
+}
+
+@media screen and (max-width: 400px) {
+
+	.nav-bar .list ul li{
+		text-decoration: none;
+		font-size: 28px;
+	}
+
+	.nav-bar .list ul{
+		padding: 20px;
+		display:flex;
+		flex-direction: column;
+		list-style: none;
+		margin-left: -40%;
+	}
+
+	.nav-bar{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.nav-bar img{
+		padding: 10px;
+		width: 20%;
+		border-radius: 100%;
+		margin-left: 10%;
+	}
+
+	.dropdown{
+		margin: 0;
+	}
+	/* ==================================== banner ====================================== */
+	
+	.imgtxt{
+		position: absolute;
+		bottom: 350px;
+		left: 30px;
+		color: red;
+		font-size: 20px;
+		font-family: fantasy;
+	}
+	
+	.btn{
+		position: absolute;
+		bottom: 250px;
+		left: 10%;
+		background-color:#D2B48C ;
+		border-radius: 100px;
+		height: 75px;
+		width: 100px;
+		font-size: 15px;
+		transition-duration: 0.3s;
+	}
+
+
+	/* ==================================== title ====================================== */
+
+
+	.title h1{
+		border-bottom: 1px solid black;
+		text-align: center;
+		margin: 1% 10% 1% 10%;
+	}
+
+	.title p{
+		text-align: center;
+		margin-bottom: 20px;
+	}
+
+		/* ==================================== img body ====================================== */
+
+		.card{
+			display: flex;
+			width: 100%;
+			justify-content: center;
+		}
+		
+		.card .text{
+			margin-top: 40px;
+			margin-left: 60px;
+			margin-right: 15px;
+		}
+		
+		.card img{
+			margin-left: 30px;
+			width: 150px;
+			height: 150px;
+		}
+
+	/* ==================================== footer ====================================== */
+
+	footer{
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		bottom: 0;
+		margin-top: 20px;
+		background: linear-gradient(90deg, rgba(247,211,175,1) 32%, rgba(255,253,250,0.8550770650056898) 93%);
+		justify-content: center;
+		align-items: center;
+	}
+	
+	
+	footer .logo img{
+		border-radius: 100%;
+		width: 50%;
+		height: 80%;
+		margin-left: 15%;
+	}
+	
+	
+	footer .divide{
+		border: 0.1px solid black;
+		display: none;
+	}
+	
+	footer .menu{
+		margin-top: 25px;
+		 width: 100%;
+		text-align: center;
+
+	}
+	
+	footer .menu a{
+		display: inline-block;
+		text-decoration: none;
+		color: black;
+	}
+	
+	footer .menu a:hover{
+		color: blue;
+	}
+	
+	footer .sosmed{
+		text-align: center;
+	}
+	
+	footer .sosmed img{
+		display: inline-block;
+		border-radius: 100%;
+		width: 15%;
+		height: 15%;
+		margin-left: -5%;
+	}
+	
+	footer .sosmed h3{
+		text-align: center;
+	}
+
+
+}

@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Food.css">
+    <title>Beverage Menu</title>
+</head>
+<body>
+
+<!-- ================================================== Navbar ============================================================= -->
+
+
+	<header>
+        <div class="nav-bar">
+            <div class="logo1">
+            <a href="home.html"><img src="/images/LogoMcDoland.png" alt=""></a>
+        </div>
+            <div class="list">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="promosi.html">Promotion</a></li>
+                <div class="dropdown">
+                <li><a href="#">Menu</a></li>
+                <div class="drop_content">
+                    <a href="Food.html">Food</a>
+				<a href="Beverage.html">Beverage</a>
+                </div>
+                </div>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </div>
+    </div>
+    </header>
+
+<!-- ================================================== head title ============================================================= -->
+
+	<div class="box">
+		<div class="txttitle">-Beverage Menu-</div>
+		<div class="line"></div>
+		<p>Enjoy Our classic refreshing fastfood menu. Taste a new experience at McDoland fastfood and you will need more than a food. <br><br> If you’re gonna go, go all out</p>
+	</div>
+
+<!-- ================================================== banner ============================================================= -->
+
+	<div class="banContainer"> 
+        <img class="image" src="/images/bannerDrink.jpg" alt="error">  
+            <div class="bannerText">
+            <p class="imgtxt">Try our latest Drink Menu <br> -Iced Coffee-<br> 
+            
+            </div>
+    </div>
+
+
+
+
+	<div class="rate">
+		<button id="1" onclick="menu('Page1')">1</button>
+		<button id="2" onclick="menu('Page2')">2</button>
+		</div>
+	
+		<div id="Page1" class="wrap">
+			<div class="card">
+				<div class="images">
+				<img src="/images/tea1.jpg" alt="">
+			</div>
+			<div class="text">
+				<h1>Bubble Tea</h1>
+				<h4>Rp20.000,00</h4>
+				<button>buy</button>
+			</div>
+			</div>
+	
+			<div class="card">
+				<div class="images">
+				<img src="/images/tea2.webp" alt="">
+			</div>
+			<div class="text">
+				<h1>Lemon Tea</h1>
+				<h4>Rp20.000,00</h4>
+				<button>buy</button>
+				</div>
+			</div>
+			<div class="card">
+				<div class="images">
+				<img src="/images/tea3.webp" alt="">
+			</div>
+			<div class="text">
+				<h1>Mango Tea</h1>
+				<h4>Rp20.000,00</h4>
+				<button>buy</button>
+				</div>
+			</div>
+			<div class="card">
+				<div class="images">
+				<img src="/images/coffee1.jpg" alt="">
+			</div>
+			<div class="text">
+				<h1>Milk Coffee</h1>
+				<h4>Rp25.000,00</h4>
+				<button>buy</button>
+				</div>
+			</div>
+			<div class="card">
+				<div class="images">
+				<img src="/images/coffee3.jpg" alt="">
+			</div>
+			<div class="text">
+				<h1>Iced Coffee</h1>
+				<h4>Rp25.000,00</h4>
+				<button>buy</button>
+				</div>
+			</div>
+		</div>
+	
+		<div id="Page2" class="wrap">
+			<div class="card">
+				<div class="images">
+				<img src="/images/soft2.jpg" alt="">
+			</div>
+			<div class="text">
+				<h1>Fanta</h1>
+				<p>Free Refill</p>
+				<h4>Rp10.000,00</h4>
+				<button>buy</button>
+				</div>
+			</div>
+			<div class="card">
+				<div class="images">
+				<img src="/images/soft3.jpg" alt="">
+			</div>
+			<div class="text">
+				<h1>Sprite</h1>
+				<p>Free Refill</p>
+				<h4>Rp10.000,00</h4>
+				<button>buy</button>
+				</div>
+			</div>
+			<div class="card">
+				<div class="images">
+				<img src="/images/soft4.jpg" alt="">
+			</div>
+			<div class="text">
+				<h1>Pepsi</h1>
+				<p>Free Refill</p>
+				<h4>Rp10.000,00</h4>
+				<button>buy</button>
+				</div>
+			</div>
+		</div>
+
+<div class="box">
+	<div class="txttitle"> -Other Menus-</div>
+	<div class="line"></div>
+</div>
+
+<div class="box3">
+	<a href="Food.html"><button class="btnFood" >Food</button></a>
+</div>
+
+<!-- ================================================== Footer ============================================================= -->
+<footer>
+	<div class="logo">
+		<a href="home.html"><img src="/images/LogoMcDoland.png" alt=""></a>
+	</div>
+
+	<div class="divide"></div>
+
+	<div class="menu">
+		<h3>Menu</h3>
+		<a href="Food.html">Food</a>
+		<a href="Beverage.html">Beverage</a>
+		<a href="promosi.html">Promotion</a>
+	</div>
+
+	<div class="sosmed">
+		<h3>Social Media</h3>
+		<a href="https://instagram.com"><img src="/images/instagram.png" alt=""></a>
+		<a href="https://facebook.com"><img src="/images/facebook.png" alt=""></a>
+		<a href="https://twitter.com"><img src="/images/twitter.png" alt=""></a> 
+		
+	</div>
+</footer>
+
+<script>
+	let Menu = ["Page1","Page2"]; //food = 0 , 
+	let count = null , len = Menu.length, i = 0;
+
+	function menu(data)  
+	{
+	if(count !== data) 
+	{
+		count = data; 
+	} 
+		if(count !== Menu[i])  
+					
+		{ 
+			document.getElementById("Page1").style.display = "none";
+			document.getElementById("Page2").style.display = "block";
+		} 
+		else  
+		{ 
+			document.getElementById("Page1").style.display = "block";
+			document.getElementById("Page2").style.display = "none";
+		}
+	}
+
+ </script>
+
+
+</body>
+
+</html>

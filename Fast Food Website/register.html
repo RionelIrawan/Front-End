@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Register</title>
+	<link rel="stylesheet" href="register.css">
+</head>
+<body>
+
+
+	<a href="home.html" class="home">
+		<img src="/images/home.png" alt="">
+	</a>
+
+	<div class="box">
+		
+		<div class="titletxt">Registration Form</div>
+		<form action="#" onsubmit="return validateForm()">
+		<div class="data">
+		<input id="name" class="username" type="text" placeholder="Username" required>
+		<br>
+		<input class="phone" type="number" id="phone" placeholder="phone number" required>
+		<br>	
+		<input id="email" class="email" type="email" placeholder="Email" required>
+		</div>
+	
+		<div class="gender">
+			<label>Gender : </label>
+			<input class="geninp" type="radio" name="gender" id="">
+			<label for="">Male</label> 
+			<input type="radio" name="gender" id="">
+			<label for="">Female</label>
+		</div>
+	
+		<br>
+		<div class="payment">
+			<label>Payment Method: </label>
+			<br>
+			<select name="option">
+				<option value="" disabled selected>Choose your option</option>
+				<option value="1">Debit/Credit Card</option>
+				<option value="2">Dana</option>
+				<option value="3">GoPay</option>
+				<option value="4">OVO</option>
+			</select>
+		</div>
+
+		<br>
+		<div class="address">
+			<label for="">Address: </label>
+			<br>
+		</div>
+		<textarea id="address" class="txtarea" name="address" cols="80" rows="3"></textarea>
+		
+		
+		<div class="termcondition">
+			<input type="checkbox" id="check"> I have read and accept Term & Condition and privacy policy 
+			</div>
+		
+
+		<button class="regis">Register</button>
+		
+		</form>
+	</div>
+	<!-- ============================================== footer ================================================== -->
+	<footer>
+        <div class="logo">
+            <a href="home.html"><img src="/images/LogoMcDoland.png" alt=""></a>
+        </div>
+
+        <div class="divide"></div>
+
+        <div class="sosmed">
+            <h3>Social Media</h3>
+            <a href="https://instagram.com"><img src="/images/instagram.png" alt=""></a>
+            <a href="https://facebook.com"><img src="/images/facebook.png" alt=""></a>
+			<a href="https://twitter.com"><img src="/images/twitter.png" alt=""></a> 
+			
+        </div>
+    </footer>
+</body>
+
+<script>
+
+	function validateForm() {
+		let username = document.getElementById("name").value;
+		let address = document.getElementById("address").value;
+		let phone= document.getElementById("phone").value;
+		let email = document.getElementById("email").value;
+	//   username
+
+	if (username.length > 10 ) {
+	document.getElementById("name").value = "";
+	document.getElementById("name").placeholder = "must lest than 10 word";
+	return false;
+	}
+	if (username.length < 4 ) {
+	document.getElementById("name").value = "";
+	document.getElementById("name").placeholder = "must more than 4 word";
+	return false;
+	}
+
+	//  phonenumber
+	if (phone.length != 10 ) {
+            document.getElementById("phone").value = "";
+            document.getElementById("phone").placeholder = "must be 10 number length";
+            return false;
+        }
+
+
+	//   address
+	if (address.length > 50 ) {
+	document.getElementById("address").value = "";
+	document.getElementById("address").placeholder = "must lest than 50 word";
+	return false;
+	}  
+
+	//   email
+	if (email.length < 3 ) {
+	document.getElementById("address").value = "";
+	document.getElementById("address").placeholder = "email is too short";
+	return false;
+	}
+
+	  // term
+            if(check == false){
+                alert("please check the term & condition");
+                return false;
+            }
+        }  
+	
+	
+	
+	</script>
+</html>
